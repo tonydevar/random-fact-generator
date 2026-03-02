@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Fact Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">Random Fact Generator</h1>
+      <p class="header__subtitle">Discover fascinating facts with just a click</p>
+    </header>
+
+    <main>
+      <div class="fact-card" id="factCard">
+        <p class="fact-text" id="factText">Click the button below to get a random fact!</p>
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn--primary" id="newFactBtn">
+          <span>✨ New Fact</span>
+        </button>
+        <button class="btn btn--secondary btn--icon" id="copyBtn" title="Copy to clipboard">
+          <span>📋</span>
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Powered by <a href="https://uselessfacts.jsph.pl/" target="_blank" rel="noopener">UselessFacts API</a></p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
